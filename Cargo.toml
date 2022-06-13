@@ -1,0 +1,14 @@
+[package]
+name = "bandwidth_limitation"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+async-speed-limit = { git = "https://github.com/adrien-zinger/async-speed-limit", rev = "9f90f7e", features = ["default", "tokio"]}
+futures = "0.3.21"
+futures-util = "0.3.21"
+tokio = { version = "1.19.2", features = ["io-util", "net", "rt", "rt-multi-thread"] }
+
